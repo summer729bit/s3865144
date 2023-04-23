@@ -3,6 +3,7 @@
     
     <head>
     <title>Icon Template Square</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
         <style>
             .row{
                 width:720px;
@@ -19,22 +20,140 @@
     <body>
 
         <div class="row">
-            <div class="image-container"><img src="img/cir.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/tri.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/squ.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="candy_img" src="img/线稿1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="carrot_img" src="img/线稿2.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="dreams_img" src="img/线稿3.png" height="200" width="200"/></div>
         </div>
 
         <div class="row">
-            <div class="image-container"><img src="img/hex.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/rec.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/sta.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="night_img" src="img/线稿4.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="dreams2_img" src="img/线稿5.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="firework_img" src="img/线稿6.png" height="200" width="200"/></div>
             </div>
 
         <div class="row">
-            <div class="image-container"><img src="img/trr.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/sqr.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/her.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="fly_img" src="img/线稿7.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="hourglasses_img" src="img/线稿8.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="traversing_img" src="img/线稿9.png" height="200" width="200"/></div>
         </div>
+
+        <script>
+            // document.getElementById("candy_img").onpointerdown = （） =》 {
+            //     console。log（“hellosummer”）
+            // }
+            var sound1 = new buzz.sound("sound/sound1.mp3");
+            var sound2 = new buzz.sound("sound/sound2.mp3");
+            var sound3 = new buzz.sound("sound/sound3.mp3");
+            var sound4 = new buzz.sound("sound/sound3.mp3");
+            var sound5 = new buzz.sound("sound/sound3.mp3");
+            var sound6 = new buzz.sound("sound/sound3.mp3");
+            var sound7 = new buzz.sound("sound/sound3.mp3");
+            var sound8 = new buzz.sound("sound/sound3.mp3");
+            var sound9 = new buzz.sound("sound/sound3.mp3");
+            window.onload = function() {
+                document.getElementById("candy_img").addEventListener("mouseover", function(e) { 
+                    sound1.play();
+                    e.target.src = "img/图标1.png";
+                });
+                document.getElementById("candy_img").addEventListener("mouseleave", function(e) { 
+                    sound1.pause();
+                    e.target.src = "img/线稿1.png";
+                });
+
+
+                document.getElementById("carrot_img").addEventListener("mouseover", function(e) { 
+                    sound2.play();
+                    e.target.src = "img/图标2.png";
+                });
+                document.getElementById("carrot_img").addEventListener("mouseleave", function(e) { 
+                    sound2.pause();
+                    e.target.src = "img/线稿2.png";
+                });
+
+                
+                document.getElementById("dreams_img").addEventListener("mouseover", function(e) { 
+                    sound3.play();
+                    e.target.src = "img/图标3.png";
+                });
+                document.getElementById("dreams_img").addEventListener("mouseleave", function(e) { 
+                    sound3.pause();
+                    e.target.src = "img/线稿3.png";
+                });
+
+
+
+
+                document.getElementById("night_img").addEventListener("mouseover", function(e) { 
+                    sound4.play();
+                    e.target.src = "img/图标4.png";
+                });
+                document.getElementById("night_img").addEventListener("mouseleave", function(e) { 
+                    sound4.pause();
+                    e.target.src = "img/线稿4.png";
+                });
+
+
+
+                
+                document.getElementById("dreams2_img").addEventListener("mouseover", function(e) { 
+                    sound5.play();
+                    e.target.src = "img/图标5.png";
+                });
+                document.getElementById("dreams2_img").addEventListener("mouseleave", function(e) { 
+                    sound5.pause();
+                    e.target.src = "img/线稿5.png";
+                });
+
+
+
+
+                document.getElementById("firework_img").addEventListener("mouseover", function(e) { 
+                    sound6.play();
+                    e.target.src = "img/图标6.png";
+                });
+                document.getElementById("firework_img").addEventListener("mouseleave", function(e) { 
+                    sound6.pause();
+                    e.target.src = "img/线稿6.png";
+                });
+
+
+
+
+                document.getElementById("fly_img").addEventListener("mouseover", function(e) { 
+                    sound7.play();
+                    e.target.src = "img/图标7.png";
+                });
+                document.getElementById("fly_img").addEventListener("mouseleave", function(e) { 
+                    sound7.pause();
+                    e.target.src = "img/线稿7.png";
+                });
+
+
+
+
+                document.getElementById("hourglasses_img").addEventListener("mouseover", function(e) { 
+                    sound8.play();
+                    e.target.src = "img/图标8.png";
+                });
+                document.getElementById("hourglasses_img").addEventListener("mouseleave", function(e) { 
+                    sound8.pause();
+                    e.target.src = "img/线稿8.png";
+                });
+
+
+                
+                document.getElementById("traversing_img").addEventListener("mouseover", function(e) { 
+                    sound9.play();
+                    e.target.src = "img/图标9.png";
+                });
+                document.getElementById("traversing_img").addEventListener("mouseleave", function(e) { 
+                    sound9.pause();
+                    e.target.src = "img/线稿9.png";
+                });
+
+
+            }
+        </script>
         
     </body>
     
