@@ -1,0 +1,14 @@
+:root { 
+background-color: aliceblue;
+}
+
+#title1 {
+font-size: larg ;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#div1 {
+    width:800px;
+    height: 100px;
+    border: 2px rgb(255, 0, 0) solid;
+}
